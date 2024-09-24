@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de gastos</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <h1>CONTROL DE GASTOS <span class="texto_verde">MENSUALES</span> </h1>
+
+        <div class="container">
+
+             <div class="from-group" >
+
+                <input type="text" class="container_input_text" id="gasto" placeholder="Nombre del gasto">
+                <input type="text" class="container_input_descip" id="description_gasto" placeholder="descripción del gasto">                   
+                <input type="number" class="container_input_number" id="valor" placeholder="Valor del gasto">
+                <button class="boton" id="agregar" onclick="clickBoton()">Agregar Gasto</button>
+
+            </div>
+
+            <div class="right">
+
+                <div class="lista">
+                   <ul id="listaDeGastos" ></ul>
+                </div>
+                   
+            </div>
+        </div>
+        <div class="total">
+            Total gastos mensuales: US$ <span id="totalGastos">0,00</span>
+        </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
